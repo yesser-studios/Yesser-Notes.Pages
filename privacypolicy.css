@@ -21,10 +21,12 @@ h2 {
   font-weight: normal;
   color: #00a0d2;
   margin-top: 40px;
+  padding: 10px;
 }
 
 p {
   line-height: 1.5;
+  padding: 10px;
 }
 
 a {

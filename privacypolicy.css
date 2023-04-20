@@ -9,7 +9,8 @@ h1 {
   font-weight: bold;
   color: #fff;
   background-color: #00a0d2;
-  padding: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 h2 {
@@ -17,12 +18,13 @@ h2 {
   font-weight: normal;
   color: #00a0d2;
   margin-top: 5px;
-  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 p {
   line-height: 1.5;
-  padding: 15px;
+  margin-left: 15px;
 }
 
 a {

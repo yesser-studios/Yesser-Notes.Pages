@@ -4,6 +4,21 @@ body {
   color: #333;
 }
 
+header {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header a {
+  color: aqua;
+  display: inline-block;
+  margin-right: 1%;
+}
+
 h1 {
   font-size: 36px;
   font-weight: bold;

@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Name {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Tagline {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header a {
+    color: aqua;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.ms-store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

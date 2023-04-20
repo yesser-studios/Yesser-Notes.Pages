@@ -1,0 +1,17 @@
+.Name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 5px;
+}
+
+header {
+    text-align: right;
+    background-color: black;
+}
+
+header a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right !important;
+    color: aqua;
+    display: inline-block;
+}

@@ -40,6 +40,12 @@ header a:hover {
 
 header a:visited {
     color: yellow;
+    text-decoration: none;
+}
+
+header a:visited:hover {
+    color: yellowgreen;
+    text-decoration: underline;
 }
 
 .ms-store {

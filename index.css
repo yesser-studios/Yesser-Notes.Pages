@@ -54,3 +54,12 @@ header a:visited:hover {
     justify-content: center;
     flex-direction: column;
 }
+
+.mainScreenshot {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}

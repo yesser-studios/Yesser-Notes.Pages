@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eeeeee;
 }
 
 .Name {
@@ -26,9 +27,25 @@ header {
 }
 
 header a {
-    color: aqua;
+    color: lightgreen;
     display: inline-block;
+    text-decoration: none;
     margin-right: 1%;
+}
+
+header a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+header a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+header a:visited:hover {
+    color: yellowgreen;
+    text-decoration: underline;
 }
 
 .ms-store {
@@ -36,4 +53,14 @@ header a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.mainScreenshot {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

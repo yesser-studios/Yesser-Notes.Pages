@@ -40,6 +40,12 @@ header a:hover {
 
 header a:visited {
     color: yellow;
+    text-decoration: none;
+}
+
+header a:visited:hover {
+    color: yellowgreen;
+    text-decoration: underline;
 }
 
 .ms-store {
@@ -47,4 +53,14 @@ header a:visited {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.mainScreenshot {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: darkgreen;
     height: 75px;
     display: flex;
     align-items: flex-end;
@@ -73,9 +73,9 @@ header a:visited:hover {
 }
 
 body {
-    background-image: url('YesserNotesImage.png');
-    background-size: cover; 
-    background-position: center top; 
+    background: black
+
+
 }
 
 h1 {

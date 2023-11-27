@@ -5,7 +5,7 @@ body {
   background-color: #eeeeee;
 }
 
-header {
+nav {
   background-color: black;
   height: 50px;
   display: flex;
@@ -14,14 +14,14 @@ header {
   flex-direction: column;
 }
 
-header a {
+nav a {
   color: lightgreen;
   display: inline-block;
   text-decoration: none;
   margin-right: 1%;
 }
 
-header a:hover {
+nav a:hover {
   color: green;
   text-decoration: underline;
 }

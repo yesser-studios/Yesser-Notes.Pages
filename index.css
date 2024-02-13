@@ -1,14 +1,44 @@
-body {
+* {
+    --background: 20, 20, 20;
+    --light-background: 40, 40, 40;
+    --accent: 20, 20, 40;
+    --text-color: 210, 210, 210;
+    --light-text-color: 240, 240, 240;
+  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eeeeee;
+  }
+
+body {
+    background: linear-gradient(
+        0deg,
+        rgb(var(--background)) 70%,
+        rgb(var(--accent)) 100%
+    );
+    background-repeat: repeat-x;
+    background-color: rgb(var(--background));
+    height: 100vh;
+    color: rgb(var(--text-color));
+    margin: 0 0 0 0;
 }
 
-.Name {
-    font-size: 100px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.title>h1 {
+    font-size: 75px;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.title>h1>span {
+    background: linear-gradient(100deg, #ccccdd 0%, #73a5ce 50%, #7e90ec 80%),#fff;
+    background-clip: text;
+    color: transparent;
+  }
 
 .Tagline {
     font-size: 30px;
@@ -18,12 +48,13 @@ body {
 }
 
 header {
-    background-color: black;
-    height: 75px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
 }
 
 header a {
@@ -62,7 +93,7 @@ header a:visited:hover {
     left: 50%;
 }
 
-!.mainScreenshot {
+.mainScreenshot {
     width: 70%;
     height: auto;
     display: block;
@@ -70,18 +101,4 @@ header a:visited:hover {
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-body {
-    background-image: url('YesserNotesImage.png');
-    background-size: cover; 
-    background-position: center top; 
-}
-
-h1 {
-    color: white
-}
-
-h3 {
-    color: white
 }

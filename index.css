@@ -1,10 +1,10 @@
 * {
-    --background: 20, 20, 20;
-    --light-background: 40, 40, 40;
-    --accent: 20, 20, 40;
-    --text-color: 210, 210, 210;
-    --light-text-color: 240, 240, 240;
-  
+    --background: 215, 215, 215;
+    --dark-background: 190, 190, 190;
+    --top-accent: 205, 205, 255;
+    --text-color: 45, 45, 45;
+    --dark-text-color: 15, 15, 15;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
@@ -12,7 +12,7 @@ body {
     background: linear-gradient(
         0deg,
         rgb(var(--background)) 70%,
-        rgb(var(--accent)) 100%
+        rgb(var(--top-accent)) 100%
     );
     background-repeat: repeat-x;
     background-color: rgb(var(--background));
@@ -35,7 +35,8 @@ body {
 }
 
 .title>h1>span {
-    background: linear-gradient(100deg, #ccccdd 0%, #73a5ce 50%, #7e90ec 80%),#fff;
+    background: linear-gradient(100deg, #333344 0%, #73a5ce 50%, #7e90ec 80%),#fff;
+    background: linear-gradient(100deg, #333344 0%, #31758c 50%, #132581 80%),#fff;
     background-clip: text;
     color: transparent;
   }
@@ -58,47 +59,68 @@ header {
 }
 
 header a {
-    color: lightgreen;
+    color: blue;
     display: inline-block;
     text-decoration: none;
     margin-right: 1%;
 }
 
 header a:hover {
-    color: green;
+    color: darkblue;
     text-decoration: underline;
 }
 
 header a:visited {
-    color: yellow;
+    color: darkgreen;
     text-decoration: none;
 }
 
 header a:visited:hover {
-    color: yellowgreen;
+    color: darkcyan;
     text-decoration: underline;
 }
 
-.ms-store {
+ms-store-badge {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    position: fixed;
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    bottom: 50px;
-    transform: translateX(-50%);
-    left: 50%;
+    margin-top: 50px;
 }
 
-.mainScreenshot {
-    width: 70%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+ms-store-badge::part(img) {
+    max-width: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+}
+  
+.container>.text {
+    margin-right: 50px;
+    font-size: 20px;
+    max-width: 700px;
+}
+  
+.container>.text>h2 {
+    font-size: 50px;
+    color: rgb(var(--dark-text-color));
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+  
+.container>.image {
+    margin-left: 50px;
+}
+  
+.container>.image>img {
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 5px;
 }

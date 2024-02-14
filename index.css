@@ -103,6 +103,30 @@ ms-store-badge::part(img) {
     max-height: 75px;
 }
 
+.bottom-store-page {
+    margin-top: 0px !important;
+}
+
+.low-bottom-margin {
+    margin-bottom: 20px;
+}
+
+.single-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lonetext {
+    font-size: 20px;
+    max-width: 1000px;
+}
+
+.lonetext>h2 {
+    font-size: 50px;
+}
+
 .container {
     display: flex;
     justify-content: center;

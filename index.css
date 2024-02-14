@@ -41,7 +41,7 @@ body {
     color: transparent;
   }
 
-.Tagline {
+.tagline {
     font-size: 30px;
     text-align: center;
     margin-top: 5px;
@@ -58,25 +58,35 @@ header {
     flex-direction: row;
 }
 
-header a {
-    color: blue;
+footer {
+    height: 50px;
+    background: rgb(var(--text-color));
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+footer a {
+    color: rgb(88, 88, 255);
     display: inline-block;
     text-decoration: none;
     margin-right: 1%;
 }
 
-header a:hover {
-    color: darkblue;
+footer a:hover {
+    color: lightblue;
     text-decoration: underline;
 }
 
-header a:visited {
-    color: darkgreen;
+footer a:visited {
+    color: lightgreen;
     text-decoration: none;
 }
 
-header a:visited:hover {
-    color: darkcyan;
+footer a:visited:hover {
+    color: cyan;
     text-decoration: underline;
 }
 
@@ -124,8 +134,4 @@ ms-store-badge::part(img) {
     max-width: 700px;
     max-height: 500px;
     border-radius: 5px;
-}
-
-footer {
-    height: 50px;
 }

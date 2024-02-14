@@ -1,16 +1,47 @@
-body {
+* {
+    --background: 215, 215, 215;
+    --dark-background: 190, 190, 190;
+    --top-accent: 205, 205, 255;
+    --text-color: 45, 45, 45;
+    --dark-text-color: 15, 15, 15;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eeeeee;
+  }
+
+body {
+    background: linear-gradient(
+        0deg,
+        rgb(var(--background)) 70%,
+        rgb(var(--top-accent)) 100%
+    );
+    background-repeat: repeat-x;
+    background-color: rgb(var(--background));
+    height: 100vh;
+    color: rgb(var(--text-color));
+    margin: 0;
 }
 
-.Name {
-    font-size: 100px;
+.title>h1 {
+    font-size: 75px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
-.Tagline {
+.title>h1>span {
+    background: linear-gradient(100deg, #333344 0%, #73a5ce 50%, #7e90ec 80%),#fff;
+    background: linear-gradient(100deg, #333344 0%, #31758c 50%, #132581 80%),#fff;
+    background-clip: text;
+    color: transparent;
+  }
+
+.tagline {
     font-size: 30px;
     text-align: center;
     margin-top: 5px;
@@ -18,70 +49,113 @@ body {
 }
 
 header {
-    background-color: black;
-    height: 75px;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
 }
 
-header a {
-    color: lightgreen;
+footer {
+    height: 50px;
+    background: rgb(var(--text-color));
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+footer a {
+    color: rgb(88, 88, 255);
     display: inline-block;
     text-decoration: none;
     margin-right: 1%;
 }
 
-header a:hover {
-    color: green;
+footer a:hover {
+    color: lightblue;
     text-decoration: underline;
 }
 
-header a:visited {
-    color: yellow;
+footer a:visited {
+    color: lightgreen;
     text-decoration: none;
 }
 
-header a:visited:hover {
-    color: yellowgreen;
+footer a:visited:hover {
+    color: cyan;
     text-decoration: underline;
 }
 
-.ms-store {
+ms-store-badge {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    position: fixed;
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    bottom: 50px;
-    transform: translateX(-50%);
-    left: 50%;
+    margin-top: 50px;
 }
 
-!.mainScreenshot {
-    width: 70%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+ms-store-badge::part(img) {
+    max-width: 200px;
+    max-height: 75px;
 }
 
-body {
-    background-image: url('YesserNotesImage.png');
-    background-size: cover; 
-    background-position: center top; 
+.bottom-store-page {
+    margin-top: 0px !important;
 }
 
-h1 {
-    color: white
+.low-bottom-margin {
+    margin-bottom: 20px;
 }
 
-h3 {
-    color: white
+.single-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.lonetext {
+    font-size: 20px;
+    max-width: 1000px;
+}
+
+.lonetext>h2 {
+    font-size: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 200px;
+}
+  
+.container>.text {
+    margin-right: 50px;
+    font-size: 20px;
+    max-width: 700px;
+}
+  
+.container>.text>h2 {
+    font-size: 50px;
+    color: rgb(var(--dark-text-color));
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+  
+.container>.image {
+    margin-left: 50px;
+}
+  
+.container>.image>img {
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 5px;
 }
